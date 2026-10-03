@@ -1,11 +1,9 @@
-
 import React, { useState } from 'react';
 import ProductList from './ProductList';
-import './App.css';
 import AboutUs from './AboutUs';
+import './App.css';
 
 function App() {
-  
   const [showProductList, setShowProductList] = useState(false);
 
   const handleGetStartedClick = () => {
@@ -37,13 +35,10 @@ function App() {
 
       </div>
       <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
-        <ProductList onHomeClick={handleHomeClick}/>
+        <ProductList onHomeClick={handleHomeClick} />
       </div>
     </div>
   );
 }
 
 export default App;
-
-
-
